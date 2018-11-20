@@ -1,0 +1,20 @@
+{
+  "name": "LeagueOfGamers",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Spyte",
+  "license": "MIT",
+  "dependencies": {
+    "computer-info": "^0.2.5",
+    "discord.js": "^11.4.2",
+    "discord.js-musicbot-addon-v2-pl": "^1.0.2",
+    "ffmpeg": "^0.0.4",
+    "firebase": "^5.5.8",
+    "moment": "^2.22.2",
+    "opus": "^0.0.0",
+    "opusscript": "^0.0.6",
+    "youtube-audio-stream": "^0.2.0",
+    "youtube-playlist-info": "^1.1.2",
+    "ytsearcher": "^1.2.0"
+  }
+}
