@@ -3,3 +3,4 @@
 Jest w nim użyta biblioteka [discord.js](discord.js.org)
 # leagueOfGamersBot
 # leagueOfGamersBot
+# test
