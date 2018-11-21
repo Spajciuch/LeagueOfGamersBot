@@ -4,8 +4,8 @@ module.exports.run = async (client, message, args) => {
     let embed = new Discord.RichEmbed()
     .setTitle(">Lista dostępnych komend")
     .setColor(config.embed_color)
-    .addField(">Administarcyjne", client.commands.filter(cmd => cmd.help.category === 'admin').map(cmd => '\ ' +"**>"+ cmd.help.name + "**"+'\ ').join("\n"))
-    .addField(">Użytkowe", client.commands.filter(cmd => cmd.help.category === 'util').map(cmd => '\ '  +"**>"+ cmd.help.name + "**"+ '\ ').join("\n"))
+    .addField(">Administarcyjne", client.commands.filter(cmd => cmd.help.category === 'admin').map(cmd => '\ ' +"**>"+ cmd.help.name + "**"+` - ${cmd.help.description}` +'\ ').join("\n"))
+    .addField(">Użytkowe", client.commands.filter(cmd => cmd.help.category === 'util').map(cmd => '\ '  +"**>"+ cmd.help.name + "**"+` - ${cmd.help.description}`+ '\ ').join("\n"))
     .setFooter("Komendy",client.user.avatarURL)
     message.channel.send(embed)
 }
