@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
   name: "warn",
-  category:"util",
+  category:"admin",
   description:"Zgłasza użytkownika (wysyła mu wiadomość na PW)",
   use:"log!report @osoba"
 }
