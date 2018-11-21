@@ -18,6 +18,7 @@ var database = firebase.database()
 client.on('ready', () => {
   console.log(`[client] Gotowy do działania`)
   console.log(`[client] Zalogowano jako ${client.user.tag}`)
+  client.user.setActivity("log!help").then(set => console.log(`[client] Ustawiono status`))
 })
 fs.readdir(`./commands/`,(err, files)=>{
   if(err) console.log(err)

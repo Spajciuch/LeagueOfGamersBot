@@ -16,8 +16,8 @@ var time = hour + ":" + minute
    message.channel.send({embed: info})
 }
 module.exports.help = {
-	name: "info",
   category:"info",
+	name: "status",
   description:"Przedstawia informacje o bocie",
   use:"log!info"
 }
